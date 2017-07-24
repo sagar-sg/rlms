@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/screen_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/address_lablel_tv"
+            android:background="@color/DodgerBlue"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/complaints"
+            android:textAllCaps="false"
+            android:textColor="@color/White"
+            android:textSize="@dimen/screen_title" />
+
+        <TextView
+            android:id="@+id/lift_label_tv"
+            android:layout_width="@dimen/complaint_text_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address_lablel_tv"
+            android:layout_marginLeft="@dimen/spinner_margin"
+            android:layout_marginRight="@dimen/spinner_margin"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="@string/lift"
+            android:textAllCaps="false"
+            android:textColor="@color/Black"
+            android:textSize="14dp" />
+
+        <Spinner
+            android:id="@+id/lift_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spinner_height"
+            android:layout_below="@+id/editDiaCountryTv"
+            android:layout_marginLeft="@dimen/spinner_margin"
+            android:layout_marginRight="@dimen/spinner_margin"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/countryTickIv"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:pointerIcon="alias"
+            android:popupBackground="@color/White"
+            android:prompt="@string/select_lift"
+            android:spinnerMode="dropdown" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/Grape" />
+
+        <TextView
+            android:id="@+id/lift_title_label"
+            android:layout_width="@dimen/complaint_text_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address_lablel_tv"
+            android:layout_marginLeft="@dimen/spinner_margin"
+            android:layout_marginRight="@dimen/spinner_margin"
+            android:padding="5dp"
+            android:text="@string/title"
+            android:textAllCaps="false"
+            android:textColor="@color/Black"
+            android:textSize="14dp" />
+
+        <Spinner
+            android:id="@+id/lift_title_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spinner_height"
+            android:layout_below="@+id/editDiaCountryTv"
+            android:layout_marginLeft="@dimen/spinner_margin"
+            android:layout_marginRight="@dimen/spinner_margin"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/countryTickIv"
+            android:background="@android:color/white"
+            android:padding="10dp"
+            android:prompt="@string/select_title_lift"
+            android:spinnerMode="dropdown" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/Grape" />
+
+        <TextView
+            android:id="@+id/description_label"
+            android:layout_width="@dimen/complaint_text_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address_lablel_tv"
+            android:layout_marginLeft="@dimen/spinner_margin"
+            android:layout_marginRight="@dimen/spinner_margin"
+            android:padding="5dp"
+            android:text="@string/description"
+            android:textAllCaps="false"
+            android:textColor="@color/Black"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/description_edit_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/decription_edit_height"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/White"
+            android:hint="@string/description"
+            android:padding="10dp"
+            android:text="e23e22r2r23rr2rr3"
+            android:textAllCaps="false"
+            android:textColor="@color/Black"
+            android:textSize="@dimen/edit_description" />
+
+        <TextView
+            android:id="@+id/registration_label_tv"
+            android:layout_width="@dimen/complaint_text_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address_lablel_tv"
+            android:layout_marginLeft="@dimen/spinner_margin"
+            android:layout_marginRight="@dimen/spinner_margin"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:text="@string/registration_date"
+            android:textAllCaps="false"
+            android:textColor="@color/Black"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/registration_date_tv"
+            android:layout_width="@dimen/complaint_text_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/address_lablel_tv"
+            android:layout_marginLeft="@dimen/spinner_margin"
+            android:layout_marginRight="@dimen/spinner_margin"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="Monday 20th March 2017"
+            android:textAllCaps="false"
+            android:textColor="@color/DodgerBlue"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/proceed_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="15dp"
+        android:background="@color/DodgerBlue"
+        android:text="@string/proceed"
+        android:textColor="@color/White" />
+</ScrollView>

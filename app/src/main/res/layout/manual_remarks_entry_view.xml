@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/White"
+        android:id="@+id/main_lin_lay"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:layout_weight="0.5"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/description"
+            android:textColor="@color/DodgerBlue"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/remarks_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="#00000000"
+            android:ems="8"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:hint="@string/remarks_hint"
+            android:inputType="text"
+            android:textColor="@color/Black"
+            android:textColorHint="@color/MetallicSilver"
+            android:textSize="18sp">
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/Black"/>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="@string/from_date"
+                android:textColor="@color/Black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="@string/to_date"
+                android:textColor="@color/Black"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/fromDateTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="Not selected"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/toDateTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="Not selected"
+                android:textColor="@color/DodgerBlue"
+                android:textSize="17sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/selectFromDateBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@color/DodgerBlue"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:text="From Date"
+                android:textColor="@color/White"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/selectToDateBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@color/DodgerBlue"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:text="To Date"
+                android:textColor="@color/White"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/selectFromTimeBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:background="@color/DodgerBlue"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:layout_marginRight="5dp"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:text="From Time"
+                android:textColor="@color/White"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/selectToTimeBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_marginLeft="5dp"
+                android:background="@color/DodgerBlue"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:text="To Time"
+                android:textColor="@color/White"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:id="@+id/bottomLay"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_lin_lay"
+        android:layout_marginTop="25dp">
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@color/DodgerBlue"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Update"
+            android:textColor="@color/White"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.5"
+            android:background="@color/DodgerBlue"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Cancel"
+            android:textColor="@color/White"
+            android:textSize="20sp" />
+
+    </TableRow>
+
+</RelativeLayout>

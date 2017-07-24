@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:padding="5dp"
+    android:background="@drawable/complaints_item_bg"
+    android:textColor="@android:color/white">
+
+
+    <TextView
+        android:id="@+id/from_date_label_tv"
+        android:layout_width="@dimen/complaint_text_width"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:text="@string/from_date"
+        android:textAllCaps="true"
+        android:textColor="@color/Black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/from_date_value_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/from_date_label_tv"
+        android:padding="3dp"
+        android:textAllCaps="false"
+        android:textColor="@color/Black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/to_date_label_tv"
+        android:layout_width="@dimen/complaint_text_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/from_date_label_tv"
+        android:padding="3dp"
+        android:text="@string/to_date"
+        android:textAllCaps="true"
+        android:textColor="@color/Black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/to_date_value_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/from_date_value_tv"
+        android:layout_toRightOf="@+id/to_date_label_tv"
+        android:padding="3dp"
+        android:textAllCaps="false"
+        android:textColor="@color/Black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/remarks_lablel_tv"
+        android:layout_width="@dimen/complaint_text_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/to_date_label_tv"
+        android:padding="3dp"
+        android:text="@string/remarks"
+        android:textAllCaps="true"
+        android:textColor="@color/Black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/remark_value_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/to_date_label_tv"
+        android:layout_toRightOf="@+id/remarks_lablel_tv"
+        android:padding="3dp"
+        android:text=""
+        android:textAllCaps="false"
+        android:textColor="@color/Black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/total_time_lablel_tv"
+        android:layout_width="@dimen/complaint_text_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remarks_lablel_tv"
+        android:padding="3dp"
+        android:text="@string/total_time"
+        android:textAllCaps="true"
+        android:textColor="@color/Black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/total_time_value_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remarks_lablel_tv"
+        android:layout_toRightOf="@+id/total_time_lablel_tv"
+        android:padding="3dp"
+        android:text=""
+        android:textAllCaps="false"
+        android:textColor="@color/Black"
+        android:textSize="14dp" />
+</RelativeLayout>

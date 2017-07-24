@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/complaints_item_bg"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:textColor="@android:color/white">
+
+    <TextView
+        android:id="@+id/complaints_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:textAllCaps="true"
+        android:textColor="@color/Gold"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/complaints_title_label_tv"
+        android:layout_width="@dimen/complaint_text_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/complaints_title_tv"
+        android:padding="5dp"
+        android:text="@string/title_str"
+        android:textAllCaps="true"
+        android:textColor="@color/Black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/complaints_title_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/complaints_title_tv"
+        android:layout_toRightOf="@+id/complaints_title_label_tv"
+        android:padding="5dp"
+        android:textAllCaps="false"
+        android:textColor="@color/Black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/details_label_tv"
+        android:layout_width="@dimen/complaint_text_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/complaints_title_label_tv"
+        android:padding="5dp"
+        android:text="@string/details_fix"
+        android:textAllCaps="true"
+        android:textColor="@color/Black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/details_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/complaints_title_name_tv"
+        android:layout_toRightOf="@+id/details_label_tv"
+        android:padding="5dp"
+        android:textAllCaps="false"
+        android:textColor="@color/Black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/address_lablel_tv"
+        android:layout_width="@dimen/complaint_text_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_label_tv"
+        android:padding="5dp"
+        android:text="@string/address_str"
+        android:textAllCaps="true"
+        android:textColor="@color/Black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/address_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_label_tv"
+        android:layout_toRightOf="@+id/address_lablel_tv"
+        android:padding="5dp"
+        android:text=""
+        android:textAllCaps="false"
+        android:textColor="@color/Black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/pending_lablel_tv"
+        android:layout_width="@dimen/complaint_text_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address_lablel_tv"
+        android:padding="5dp"
+        android:text="@string/pending_since"
+        android:textAllCaps="true"
+        android:textColor="@color/Black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/pending_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address_lablel_tv"
+        android:layout_toRightOf="@+id/pending_lablel_tv"
+        android:padding="5dp"
+        android:text=""
+        android:textAllCaps="false"
+        android:textColor="@color/Black"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:id="@+id/status_iv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignRight="@+id/complaints_title_name_tv"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/green_indicator"/>
+
+    <LinearLayout
+        android:id="@+id/mark_as_resolve_directions_lay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/pending_tv"
+        android:background="@color/DodgerBlue"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/mark_as_resolve_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.33"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_mood"
+            android:gravity="left"
+            android:visibility="gone"
+            tools:mockup_opacity="@android:integer/config_longAnimTime"
+            android:drawablePadding="5dp"
+            android:text="@string/mark_resolve"
+            android:textColor="@color/White" />
+
+        <TextView
+            android:id="@+id/get_directions_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.33"
+            android:drawablePadding="-5dp"
+            android:drawableLeft="@drawable/ic_map"
+            android:gravity="center"
+            android:text="@string/get_directions"
+            android:textColor="@color/White" />
+
+        <TextView
+            android:id="@+id/update_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.33"
+            android:drawablePadding="-5dp"
+            android:drawableLeft="@drawable/ic_map"
+            android:gravity="center"
+            android:text="@string/update_status_str"
+            android:textColor="@color/White" />
+
+    </LinearLayout>
+</RelativeLayout>

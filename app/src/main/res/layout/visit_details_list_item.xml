@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/complaints_item_bg"
+    android:orientation="vertical">
+
+    <TableRow
+        android:id="@+id/row_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/from_date_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="20 April 2017"
+            android:textColor="@color/Black"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/to_date_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="30 April 2017"
+            android:textColor="@color/Black"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/remarks_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="To far from city"
+            android:textColor="@color/Black"
+            android:textSize="13dp" />
+
+    </TableRow>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/DodgerBlue" />
+
+</LinearLayout>
